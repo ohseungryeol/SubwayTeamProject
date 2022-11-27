@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WelfareSubway</string>
+    <string name="station_info">역정보</string>
+    <string name="path_finding">길찾기</string>
+    <string name="route_map">노선도</string>
+    <string name="alarm">하차 알림</string>
+
+    <string name="r_time">경로 : 101 - 102 - 103 시간: 10분 | 비용: 1250원</string>
+    <string name="r_distance">101 - 102 - 103</string>
+    <string name="r_charge">101 - 102 - 103</string>
+    <string name="r_transfer">101 - 102 - 103</string>
+</resources>

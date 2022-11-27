@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SubwayStation1" android:label="역 정보 액티비티"/>
+        <activity android:name=".RouteActivity" android:label="길찾기화면1 액티비티"/>
+        <activity android:name=".Route2Activity" android:label="길찾기화면 2 액티비티"/>
+        <activity android:name=".SubwayStation2" android:label="역 정보 2 액티비티"/>
+
+    </application>
+
+</manifest>
