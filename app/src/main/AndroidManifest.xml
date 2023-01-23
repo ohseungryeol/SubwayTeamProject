@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
-
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,10 +18,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SubwayStation1" android:label="역 정보 액티비티"/>
-        <activity android:name=".RouteActivity" android:label="길찾기화면1 액티비티"/>
-        <activity android:name=".Route2Activity" android:label="길찾기화면 2 액티비티"/>
-        <activity android:name=".SubwayStation2" android:label="역 정보 2 액티비티"/>
+        <receiver android:name=".DeviceBootReceiver"
+            android:enabled="false"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".AlarmReceiver" />
+
+
+        <activity android:name=".SubwayStation1" android:label="역 정보 "/>
+        <activity android:name=".RouteActivity" android:label="길찾기"/>
+        <activity android:name=".Route2Activity" android:label="길찾기"/>
+        <activity android:name=".SubwayStation2" android:label="시설정보"/>
+        <activity android:name=".AlarmActivity" android:label="알림설정"/>
 
     </application>
 

@@ -144,6 +144,7 @@
         tools:context=".Route2Activity">
 
         <TextView
+            android:id="@+id/start_end"
             android:layout_width="match_parent"
             android:layout_height="85dp"
             android:layout_marginLeft="60dp"
@@ -189,12 +190,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:text="최단 시간"
+                    android:text="최소 시간"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/shortTime"
+                    android:id="@+id/min_time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
@@ -214,7 +215,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/shortDistance"
+                    android:id="@+id/min_dis"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
@@ -234,7 +235,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/shortFee"
+                    android:id="@+id/min_cost"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
@@ -254,7 +255,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/shortChange"
+                    android:id="@+id/min_transfer"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
@@ -264,25 +265,6 @@
                     android:textSize="20dp"
                     android:text="@string/r_transfer" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="50dp"
-                    android:text="중간역"
-                    android:textColor="@color/black"
-                    android:textSize="20dp" />
-
-                <TextView
-                    android:id="@+id/middleStation"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="10dp"
-                    android:textSize="20dp"
-                    android:background="@drawable/route2_bg"
-                    android:text="역이름" />
 
             </LinearLayout>
 
