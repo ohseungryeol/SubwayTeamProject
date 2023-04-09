@@ -133,12 +133,36 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.274" />
 
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:timePickerMode="spinner"/>
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:text="알림 설정하기"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/timePicker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/route_bg1"
+        android:textSize="20dp"
+        android:id="@+id/button" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".RouteActivity">
+        tools:context=".AlarmActivity"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-32dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -147,82 +171,16 @@
             android:layout_marginRight="60dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="50dp"
-            android:textColor="@color/black"
             android:background="@drawable/route_bg"
-            android:text="길찾기"
+            android:text="하차 알림"
+            android:textColor="@color/black"
             android:gravity="center"
             android:textSize="37sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.55"
             app:layout_constraintStart_toStartOf="parent"
-            />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="200dp"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/route_bg2"
-                    android:text="출발역"
-                    android:textColor="@color/black"
-                    android:textSize="20dp" />
-
-
-                <EditText
-                    android:id="@+id/startStation"
-                    android:layout_width="220dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:hint="출발역을 입력하세요"
-                    android:textSize="15dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/route_bg2"
-                    android:textColor="@color/black"
-                    android:text="도착역"
-                    android:textSize="20dp" />
-
-                <EditText
-                    android:id="@+id/endStation"
-                    android:layout_width="220dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:textSize="15dp"
-                    android:hint="도착역을 입력하세요" />
-            </LinearLayout>
-        </LinearLayout>
-
-
-        <androidx.appcompat.widget.AppCompatButton
-
-            android:id="@+id/btn_search"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:background="@drawable/route_bg1"
-            android:text="검색"
-            android:textColor="@color/black" />
+            /> />
 
         <androidx.appcompat.widget.AppCompatButton
 
@@ -237,5 +195,7 @@
             android:textColor="@color/black"
             android:textSize="17dp" />
 
+
     </RelativeLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,14 +27,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        /*btn_alarm = findViewById(R.id.btn_alarm);
+        btn_alarm = findViewById(R.id.btn_alarm);
         btn_alarm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, AlarmActivity.class);
                 startActivity(intent);
             }
-        });*/
+        });
         Button btn_station_info = (Button) findViewById(R.id.btn_station_info);
 
         btn_station_info.setOnClickListener(new View.OnClickListener() {

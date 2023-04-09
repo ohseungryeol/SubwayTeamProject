@@ -47,8 +47,8 @@ public class DatabaseAccess {
         StringBuffer buffer = new StringBuffer();
 
         while(c.moveToNext()){
-            String elevator = c.getString(0);
-            buffer.append(""+elevator);
+            String toilet = c.getString(0);
+            buffer.append(""+toilet);
         }
         return buffer.toString();
     }
@@ -57,8 +57,8 @@ public class DatabaseAccess {
         StringBuffer buffer = new StringBuffer();
 
         while(c.moveToNext()){
-            String elevator = c.getString(0);
-            buffer.append(""+elevator);
+            String aircondition = c.getString(0);
+            buffer.append(""+aircondition);
         }
         return buffer.toString();
     }
@@ -67,8 +67,8 @@ public class DatabaseAccess {
         StringBuffer buffer = new StringBuffer();
 
         while(c.moveToNext()){
-            String elevator = c.getString(0);
-            buffer.append(""+elevator);
+            String wheelchair = c.getString(0);
+            buffer.append(""+wheelchair);
         }
         return buffer.toString();
     }
